@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" name="calculator">
+        <input type="text" name="show" disabled><br>
+        <hr>
+        <input type="button" value="CE" onclick="calculator.show.value=''">
+        <input type="button" value="C" onclick="calculator.show.value=''">
+        <input type="button" value="&radic;"onclick="calculator.show.value= Math.sqrt(calculator.show.value)">
+        <input type="button" value="&larr;" onclick="calculator.show.value=calculator.show.value.slice(0,-1)">
+        <br>
+
+        <input type="button" value="7" onclick=" calculator.show.value+= '7'">
+        <input type="button" value="8" onclick= "calculator.show.value+= '8'">
+        <input type="button" value="9" onclick= "calculator.show.value+= '9'">
+        <input type="button" value="+" onclick= "calculator.show.value+= '+'" >
+        <br>
+        <input type="button" value="4" onclick= "calculator.show.value+='4'">
+        <input type="button" value="5" onclick= "calculator.show.value+= '5'">
+        <input type="button" value="6" onclick= "calculator.show.value+= '6'">
+        <input type="button" value="-" onclick= "calculator.show.value+= '-'">
+        <br>
+        <input type="button" value="1" onclick= "calculator.show.value+= '1'">
+        <input type="button" value="2" onclick= "calculator.show.value+= '2'">
+        <input type="button" value="3" onclick= "calculator.show.value+= '3'">
+        <input type="button" value="*" onclick= "calculator.show.value+='*'">
+        <br>
+        <input type="button" value="0" onclick= "calculator.show.value+= '0' ">
+        <input type="button" value="." onclick= "calculator.show.value+= '.'">
+        <input type="button" value="=" onclick= "calculator.show.value =eval(calculator.show.value)">
+        <input type="button" value="/" onclick= "calculator.show.value+= '/'">
+        <br>
+    </form>
+
+    
+</body>
+</html>
